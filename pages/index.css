@@ -328,17 +328,17 @@ p, h1, h2, h3, h4, h5 {
     content: "";
     object-fit: contain;
 
-    animation: rotation 6s infinite linear;
+    /*animation: rotation 6s infinite linear;*/
 }
 
-@keyframes rotation {
+/*@keyframes rotation {
   from {
     transform: rotate3d(0, 1, 0, 90deg);
   }
   to {
 	transform: rotate3d(0, 1, 0, -90deg);
   }
-}
+}*/
     
 
 
