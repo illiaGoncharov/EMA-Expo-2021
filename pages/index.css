@@ -124,9 +124,13 @@ p, h1, h2, h3, h4, h5 {
 	padding-top: 26px;
 	/*width: calc(((100% / 3) - (13px)));
 	height: auto;*/
-	max-height: 400px;
-    width: 100%;
-    object-fit: cover;
+	/*max-height: 400px;
+    width: 100%;*/
+    width: calc(100% / 3);
+    height: auto;
+    padding-right: 10px;
+    box-sizing: border-box;
+    object-fit: contain;
 }
 .artist__embed {
 	padding-top: 26px;
