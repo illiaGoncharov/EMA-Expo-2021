@@ -1,0 +1,20 @@
+plan
+
+[] = git branch && git checkout
+[] = git checkout develop 
+[] = git checkout main && git merge develop && git push 
+[] = git add . && git commit -m ""
+
+--- next
+  + git add . && git commit -m "feat:добавил анг. страницу && fix: логотипы больше не rotate3d"  
+
+notes
+- [done] 
+
+done
++
+ ↑
+ ↓
+
+
+
