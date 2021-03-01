@@ -6,13 +6,18 @@ plan
 [] = git add . && git commit -m ""
 
 --- next
-  + git add . && git commit -m "fix: viewport" && git push
+  + git add . && git commit -m "fix: теперь клик на артиста откр/закр дроп && новый дроп закрывает старые && плавный скрол к началу чтения" && git push
 
 notes
 - [done] сделать, чтобы блоки закрывались предыдущием в артисте
 - мал фотки + попап
+- закрытие на клик 
 
 done
++ feat: all artists layout new
++ beta-feat: lou layout new
++ fix: safari pic size bug
++ fix: viewport
 + feat: artist__pic to 33% - pr:10px
 + fix: адрес скрипта [en css fix] ++++
 + fix: адрес скрипта [en to root] +++ && feat: в title объявление языков добавил

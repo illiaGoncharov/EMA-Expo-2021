@@ -24,6 +24,8 @@ body {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
+
+	// scroll-behavior: smooth;
 }
 p, h1, h2, h3, h4, h5 {
     margin-block-start: 0em;
@@ -87,6 +89,10 @@ p, h1, h2, h3, h4, h5 {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+.artist__name:hover {
+	background: #fff;
+	max-width: 100%;
+}
 .artist__title {
 	overflow: hidden;
 	max-width: calc((100% / 2) - 21px);
@@ -94,15 +100,22 @@ p, h1, h2, h3, h4, h5 {
 	white-space: nowrap;
 }
 .artist__dropdown {
-	height: auto;
 	overflow: hidden;
 	flex-basis: 100%;
 	box-sizing: border-box;
 	padding-left: 10px;
+
+	height: auto;
+	visibility: visible;
+	opacity: 1;
+	transition: visibility .35s, opacity .35s linear;
 }
 .artist__dropdown-hidden {
 	height: 0;
 	padding-bottom: 0;
+
+	visibility: hidden;
+	opacity: 0;
 }
 .artist__card {
 	display: flex;
@@ -289,6 +302,11 @@ p, h1, h2, h3, h4, h5 {
 	    width: 100%;
 	    max-height: 450px;
 	    object-fit: cover;
+	}
+	.artist__name:hover {
+		position: absolute;
+		background: #fff;
+		width: 100%;
 	}
 
 	.footer__column {
