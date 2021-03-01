@@ -694,14 +694,14 @@
 				<input class="form__button" type="submit" value="subscribe">
 			</form>
 			<ul class="footer__link">
-				<li><a class="footer__link-item" href="">instagram</a></li>
-				<li><a class="footer__link-item" href="">soundcloud</a></li>
-				<li><a class="footer__link-item" href="">facebook</a></li>
+				<li><a class="footer__link-item" href="https://www.instagram.com/kota.moscow/">instagram</a></li>
+				<li><a class="footer__link-item" href="https://soundcloud.com/kotaerecords">soundcloud</a></li>
+				<li><a class="footer__link-item" href="https://www.facebook.com/kota.moscow">facebook</a></li>
 			</ul>
 		</div>
 		<div class="footer__column">
 			<ul class="footer__link">
-				<li><a class="footer__link-item" href="">bandcamp</a></li>
+				<li><a class="footer__link-item" href="https://kotae.bandcamp.com">bandcamp</a></li>
 				<li><a class="footer__link-item" href="https://kotaerecords.com/ema-expo">previous EXPO-s</a></li>
 				<li><a class="footer__link-item" href=""></a></li>
 			</ul>
@@ -732,20 +732,6 @@
   		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   		crossorigin="anonymous">
   	</script>
-	<script>
-		$(document).ready(function () {
-			const pD = function(e) {
-				e.preventDefault();
-			};
-		    $('.artist > a').click(function (e) {
-		    	pD(e);
-		    	$(this).siblings('.artist__dropdown').toggleClass('artist__dropdown-hidden');
-		    });
-		    $('.partner a').click(function (e) {
-		    	e.preventDefault();
-		    });
-		});
-
-	</script>
+	<script src="../js/artist.js"></script>
 </body>
 </html>

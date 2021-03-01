@@ -733,20 +733,6 @@
   		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   		crossorigin="anonymous">
   	</script>
-	<script>
-		$(document).ready(function () {
-			const pD = function(e) {
-				e.preventDefault();
-			};
-		    $('.artist > a').click(function (e) {
-		    	pD(e);
-		    	$(this).siblings('.artist__dropdown').toggleClass('artist__dropdown-hidden');
-		    });
-		    $('.partner a').click(function (e) {
-		    	e.preventDefault();
-		    });
-		});
-
-	</script>
+  	<script src="../js/artist.js"></script>
 </body>
 </html>
