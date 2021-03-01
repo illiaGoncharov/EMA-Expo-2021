@@ -6,13 +6,15 @@ plan
 [] = git add . && git commit -m ""
 
 --- next
-  + git add . && git commit -m "fix: адрес скрипта [en css fix] ++++" && git push
+  + git add . && git commit -m "fix: viewport" && git push
 
 notes
 - [done] сделать, чтобы блоки закрывались предыдущием в артисте
 - мал фотки + попап
 
 done
++ feat: artist__pic to 33% - pr:10px
++ fix: адрес скрипта [en css fix] ++++
 + fix: адрес скрипта [en to root] +++ && feat: в title объявление языков добавил
 + feat: модули артистов закрываются, если кликнуть на нового
 + feat:добавил анг. страницу && fix: логотипы больше не rotate3d
