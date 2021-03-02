@@ -136,7 +136,7 @@ p, h1, h2, h3, h4, h5 {
 .artist__pic {
 	padding-top: 26px;
     width: calc(100% / 3);
-    height: 100%;
+    height: fit-content;
     max-height: inherit;
     padding-right: 10px;
     box-sizing: border-box;
@@ -293,6 +293,8 @@ p, h1, h2, h3, h4, h5 {
 	text-decoration-line: underline !important;
 	cursor: pointer;
 }
+
+/* popup */
 .popup {
 	position: fixed;
   	top: 0;

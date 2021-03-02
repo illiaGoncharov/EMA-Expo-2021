@@ -6,14 +6,18 @@ plan
 [] = git add . && git commit -m ""
 
 --- next
-  + git add . && git commit -m "feat: popup" && git push
+  + git add . && git commit -m "" && git push
 
 notes
 - [done] сделать, чтобы блоки закрывались предыдущием в артисте
 - [done] закрытие на клик 
-- мал фотки + попап
+- [done] мал фотки + попап
+- листалка
 
 done
++ fix: баг с высотой экрана + && отключен попап для ширины меньше 650
++ fix: баг с высотой экрана && темнее оверлей
++ feat: popup для десктопа (без крестика и подписи)
 + fix: теперь клик на артиста откр/закр дроп && feat: новый дроп закрывает старые && feat: плавный скрол к началу чтения 
 + feat: all artists layout new
 + beta-feat: lou layout new
