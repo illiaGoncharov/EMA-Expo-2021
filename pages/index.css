@@ -356,22 +356,25 @@ p, h1, h2, h3, h4, h5 {
 }
 
 #panasonic-p:hover:after {
-    background-image: url('../assets/panasonic-p.png'); /* no need for qoutes */
+    background-image: url('../assets/panasonic-p.png');
 }
 #yamaha-p:hover:after {
-    background-image: url('../assets/yamaha-p.png'); /* no need for qoutes */
+    background-image: url('../assets/yamaha-p.png');
 }
-#logic-p:hover:after {
-    background-image: url('../assets/logic-p.png'); /* no need for qoutes */
+#ims-p:hover:after {
+    background-image: url('../assets/ims-p.png'); /*???*/
 }
-#hek-p:hover:after {
-    background-image: url('../assets/hek-p.png'); /* no need for qoutes */
+#madiatact-p:hover:after {
+    background-image: url('../assets/madiatact-p.png'); /*???*/
 }
 #goethe-p:hover:after {
-    background-image: url('../assets/goethe-p.png'); /* no need for qoutes */
+    background-image: url('../assets/goethe-p.png');
 }
 #prohelvetia-p:hover:after {
-    background-image: url('../assets/prohelvetia-p.png'); /* no need for qoutes */
+    background-image: url('../assets/prohelvetia-p.png');
+}
+#logic-p:hover:after {
+    background-image: url('../assets/logic-p.png');
 }
 
 .partner__name:hover:after {
@@ -388,18 +391,7 @@ p, h1, h2, h3, h4, h5 {
     z-index: -1;
     content: "";
     object-fit: contain;
-
-    /*animation: rotation 6s infinite linear;*/
 }
 
-/*@keyframes rotation {
-  from {
-    transform: rotate3d(0, 1, 0, 90deg);
-  }
-  to {
-	transform: rotate3d(0, 1, 0, -90deg);
-  }
-}*/
-    
 
 

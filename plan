@@ -4,15 +4,24 @@ plan
 [] = git checkout develop 
 [] = git checkout main && git merge develop && git push 
 [] = git add . && git commit -m ""
+[] = git commit --amend -m "wrong terminal window"
 
 --- next
-  + git add . && git commit -m "" && git push
+
+  + git add . && git commit -m "fix: обновлены партнеры [ims-p && madiatakt-p] && добавлены контент в русской версии" && git push
 
 notes
 - [done] сделать, чтобы блоки закрывались предыдущием в артисте
 - [done] закрытие на клик 
 - [done] мал фотки + попап
+- логотипы в css и файлы
+- ims-p && madiatakt-p
+- fav circle
+- термс и другие стр https://www.termsandcondiitionssample.com/
+- https
 - листалка
+- кредитсы 
+- чимп 
 
 done
 + fix: баг с высотой экрана + && отключен попап для ширины меньше 650
