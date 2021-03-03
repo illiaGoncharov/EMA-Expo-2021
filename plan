@@ -8,22 +8,26 @@ plan
 
 --- next
 
-  + git add . && git commit -m "fix: обновлены партнеры [ims-p && madiatakt-p] && добавлены контент в русской версии" && git push
+  + git add . && git commit -m "fix: логотипы в css и файлы [ims-p && madiatakt-p] && minor css upd-s [artist title & name] && sfari pics bug" && git push
 
 notes
 - [done] сделать, чтобы блоки закрывались предыдущием в артисте
 - [done] закрытие на клик 
 - [done] мал фотки + попап
-- логотипы в css и файлы
-- ims-p && madiatakt-p
+- [done] логотипы в css и файлы [ims-p && madiatakt-p]
 - fav circle
 - термс и другие стр https://www.termsandcondiitionssample.com/
 - https
 - листалка
 - кредитсы 
 - чимп 
+- ecs выход & клик на фотку
+- ссылки в конце артиста 
+- название проекта при наведении
+- крутилка как в метро артист назв и тайтл
 
 done
++ fix: обновлены партнеры [ims-p && madiatakt-p] && добавлены контент в русской версии
 + fix: баг с высотой экрана + && отключен попап для ширины меньше 650
 + fix: баг с высотой экрана && темнее оверлей
 + feat: popup для десктопа (без крестика и подписи)

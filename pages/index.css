@@ -75,6 +75,7 @@ p, h1, h2, h3, h4, h5 {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	margin-bottom: 31px;
+	position: relative;
 }
 .artist:nth-last-child(1) {
 	margin-bottom: 0;	
@@ -98,6 +99,14 @@ p, h1, h2, h3, h4, h5 {
 	max-width: calc((100% / 2) - 21px);
 	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+.artist__title:hover {
+	max-width: 100%;
+	cursor: pointer;
+	background: #fff;
+	position: absolute;
+	right: 0px;
+	text-align: right;
 }
 .artist__dropdown {
 	overflow: hidden;
@@ -128,7 +137,7 @@ p, h1, h2, h3, h4, h5 {
 }
 .artist__gallery {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
@@ -136,7 +145,7 @@ p, h1, h2, h3, h4, h5 {
 .artist__pic {
 	padding-top: 26px;
     width: calc(100% / 3);
-    height: fit-content;
+    height: intrinsic;
     max-height: inherit;
     padding-right: 10px;
     box-sizing: border-box;
@@ -204,7 +213,19 @@ p, h1, h2, h3, h4, h5 {
 }
 .partner__name {
 	color: #5649E6 !important;
-	text-decoration-line: underline !important;
+	text-decoration-line: none !important;
+}
+.partner__role {
+	overflow: hidden;
+	max-width: calc((100% / 2) - 21px);
+	text-overflow: ellipsis;
+	text-align: right;
+	white-space: nowrap;
+}
+.partner__role:hover {
+	max-width: 100%;
+	cursor: pointer;
+	background: #fff;
 }
 
 /* footer */
@@ -356,25 +377,25 @@ p, h1, h2, h3, h4, h5 {
 }
 
 #panasonic-p:hover:after {
-    background-image: url('../assets/panasonic-p.png');
+    background-image: url('../assets/panasonic-p.svg');
 }
 #yamaha-p:hover:after {
-    background-image: url('../assets/yamaha-p.png');
+    background-image: url('../assets/yamaha-p.svg');
 }
 #ims-p:hover:after {
-    background-image: url('../assets/ims-p.png'); /*???*/
+    background-image: url('../assets/ims-p.svg'); /*???*/
 }
 #madiatact-p:hover:after {
-    background-image: url('../assets/madiatact-p.png'); /*???*/
+    background-image: url('../assets/madiatact-p.svg'); /*???*/
 }
 #goethe-p:hover:after {
-    background-image: url('../assets/goethe-p.png');
+    background-image: url('../assets/goethe-p.svg');
 }
 #prohelvetia-p:hover:after {
-    background-image: url('../assets/prohelvetia-p.png');
+    background-image: url('../assets/prohelvetia-p.svg');
 }
 #logic-p:hover:after {
-    background-image: url('../assets/logic-p.png');
+    background-image: url('../assets/logic-p.svg');
 }
 
 .partner__name:hover:after {
