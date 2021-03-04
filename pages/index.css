@@ -346,6 +346,13 @@ p, h1, h2, h3, h4, h5 {
 	max-height: 75vh;
 	position: relative;
 }
+.popup__img-caption {
+	color: white;
+	font-weight: 400;
+    font-size: 12px;
+    line-height: 1.21;
+    margin-top: 10px;
+}
 
 @media (max-width: 650px) {
 	.artist__text {

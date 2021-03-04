@@ -19,22 +19,24 @@ $('.partner a').click(function (e) {
 
 if ($(window).width() >= 650) {
   // modal [lightbox] 
-  const popupLB = document.querySelector(".popup_type_lightbox");
-  const popupFig = popupLB.querySelector(".popup__img-figure");
-  const popupImg = popupFig.querySelector(".popup__img");
+  const popupLightbox = document.querySelector(".popup_type_lightbox");
+  const popupFigure = popupLightbox.querySelector(".popup__img-figure");
+  const popupImage = popupFigure.querySelector(".popup__img");
+  const popupCaption = popupFigure.querySelector(".popup__img-caption");
 
   // behavior [popup]
   function closePopup(target) {
     target.classList.remove("popup_opened");
   }
-  function openPopup(link) {
+  function openPopup(link, alt) {
     $('.popup').toggleClass("popup_opened");
-    popupImg.src = link;
+    popupImage.src = link;
+    popupCaption.textContent = alt;
   }
 
   // listen [lightbox]
   $('.artist__gallery > img').click(function(e) {
-      openPopup(this.src);
+      openPopup(this.src, this.alt);
   })
 
   const popupList = document.querySelectorAll(".popup");
