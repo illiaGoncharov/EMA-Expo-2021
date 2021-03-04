@@ -51,8 +51,12 @@ p, h1, h2, h3, h4, h5 {
 	text-decoration-line: underline;
 	color: #5649E6;
 }
+.header__title-a-container {
+	text-decoration: none !important;
+}
 .header__title {
 	font-family: IBMPlexMono-b;
+	color: #000 !important;
 }
 
 /* article */

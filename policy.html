@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<header class="header">
-        <a href="https://yandex.ru/maps/213/moscow/?ll=37.592073%2C55.765474&mode=routes&rtext=~55.765474%2C37.592073&rtt=auto&ruri=~ymapsbm1%3A%2F%2Forg%3Foid%3D219383171196&z=14">
+	 <header class="header">
+        <a href="https://mmoma.ru/exhibitions/ermolaevsky17/experimental_music_and_art_ema_expo_2021/">
             <p class="header__adress-link"> 
                 ММОМА
             </p>
         </a>
-        <p class="header__title">
-            [EMA] Expo 2021
-        </p>
-        <a href="webcal://example.com/path/calendar.ics">
+        <a class="header__title-a-container" href="index.html">
+            <p class="header__title">
+                [EMA] Expo 2021
+            </p>
+        </a>
+        <a href="">
             <p class="header__adress-link"> 
                 19.04/16.05
             </p>
@@ -89,6 +91,7 @@
 		4.3. Обезличенные данные Пользователей, собираемые с помощью сервисов интернет-статистики, служат для сбора информации о действиях Пользователей на сайте, улучшения качества сайта и его содержания.
 		<br>
 		<br>
+ 	</article>
 	<article class="article">
 		5. Правовые основания обработки персональных данных
 		<br>
@@ -137,11 +140,44 @@
 		<br>
 		<br>
 	</article>
-	
-<script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-    crossorigin="anonymous">
-</script>
-<script src="./js/artist.js"></script>
+
+	 <footer class="footer">
+        <div class="footer__column">
+            <form class="form" action="">
+                <label class="form__name" for="email">newsletter</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="email">
+                <input class="form__button" type="submit" value="subscribe">
+            </form>
+            <ul class="footer__link">
+                <li><a class="footer__link-item" href="">instagram</a></li>
+                <li><a class="footer__link-item" href="">soundcloud</a></li>
+                <li><a class="footer__link-item" href="">facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer__column">
+            <ul class="footer__link">
+                <li><a class="footer__link-item" href="https://kotae.bandcamp.com">bandcamp</a></li>
+                <li><a class="footer__link-item" href="https://kotaerecords.com/ema-expo">previous EXPO-s</a></li>
+                <li><a class="footer__link-item" href=""></a></li>
+            </ul>
+            <ul class="footer__link">
+                <li><a class="footer__link-item footer__link-item-colorGray" href="terms.html">terms & conditions</a></li>
+                <li><a class="footer__link-item footer__link-item-colorGray" href="policy.html">privacy policy</a></li>
+                <li><a class="footer__link-item footer__link-item-colorGray" href="contacts">contacts</a></li>
+            </ul>
+        </div>
+        <div class="footer__column footer__column-place-Bottom">
+            <ul class="footer__link">
+                <li>
+                    <!-- tilda alert -->
+                    <a class="footer__link-item footer__link-item-colorBlack" href="index-en.html">en</a> / 
+                    <a class="footer__link-item footer__link-item-colorBlack" href="index.html">ru</a>
+                    <!-- tilda alert -->
+                </li>
+            </ul>
+            <ul class="footer__link">
+                <li><a class="footer__link-item footer__link-item-colorBlack" href="#">get back [↑]</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>

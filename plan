@@ -8,10 +8,10 @@ plan
 
 --- next
 
-  + git add . && git commit -m "basix policy page added && footer upd && " && git push
+  + git add . && git commit -m "fix: футер в полиси & убрал js && feat: добавил favicon везде и для всех экранов && feat: EXPO логотип теперь на главную" && git push
 
 notes
-- кредитсы []
+- [done] кредитсы []
 	- фигкап
 	- js
 	- альты 
@@ -34,6 +34,7 @@ notes
 
 
 done
++ feat: добавил policy page && ref: footer обновил ссылки && feat: кредитсы для фото = img.alt added
 + fix: логотипы в css и файлы [ims-p && madiatakt-p] && minor css upd-s [artist title & name] && sfari pics bug
 + fix: обновлены партнеры [ims-p && madiatakt-p] && добавлены контент в русской версии
 + fix: баг с высотой экрана + && отключен попап для ширины меньше 650
