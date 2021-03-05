@@ -279,6 +279,9 @@ p, h1, h2, h3, h4, h5 {
 .footer__link-item-colorBlack {
 	color: #000 !important;
 }
+.footer__link-item_type_no-line {
+	text-decoration-line: none !important;
+} 
 
 .form {
 	display: flex;

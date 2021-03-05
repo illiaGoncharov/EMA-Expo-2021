@@ -39,13 +39,22 @@ if ($(window).width() >= 650) {
       openPopup(this.src, this.alt);
   })
 
+  // listen close [lightbox]
   const popupList = document.querySelectorAll(".popup");
 
   popupList.forEach((popup) => {
     popup.addEventListener("click", (evt) => {
-      if (evt.target.classList.contains("popup_opened")) {
+      /*if (evt.target.classList.contains("popup_opened")) {
         closePopup(popup);
-      }
+      }  */
+      closePopup(popup);
     });
+  });
+
+  // listen close 2 [lightbox]
+  document.addEventListener("keydown", (evt) => {
+    if (evt.key == "Escape") {
+      closePopup(document.querySelector(".popup_opened"));
+    }  
   });
 }

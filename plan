@@ -8,43 +8,48 @@ plan
 
 --- next
 
-  + git add . && git commit -m "feat: добавил favicon везде и для всех экранов + && fix: аватарки большие в мал && " && git push
+  + git add . && git commit -m "" && git push
 
 notes
 - [done] кредитсы [] 
-	- фигкап 
+	- class  
 	- js 
 	- альты 
-- ! англ 
+- [done] англ 
+- [done] fav circle [+ smaler] 
+	- files
+- [done] en/ru active  
+	- css
+	- class
+- [done] авки маленькие 
+	- css
+	- class
+- [done] https
+- [done] название проекта при наведении
+	- css
 - ! ecs выход & клик на фотку 
-- ! fav circle [+ smaler] 
-- ! en/ru active  
-- ! авки маленькие 
+	- 
+- ! expo везде в ссыку на индекс
 - ! сафари баг попап  
-- 
-- ... https
 - попроавить 
 
-- js только на нужных стр 
-- ! листалка
-- ссылки в конце артиста 
-- название проекта при наведении
-- крутилка как в метро артист назв и тайтл
 - ! сафари инпут баг 
 - ! сафари партнеры проявление вертикаль уровнять
-- ! expo везде в ссыку на индекс
 
+- ! листалка
+- ссылки в конце артиста 
+- крутилка как в метро артист назв и тайтл
 - чимп 
 - «Нажимая на кнопку, вы даете согласие на обработку своих персональных данных». В тексте должна быть ссылка на документ — Пользовательское соглашение, договор или согласие на обработку персональных данных.
 - https://tilda.education/articles-personal-data-law
 - policy стр https://www.termsandcondiitionssample.com/
 - terms https://legalitgroup.com/ru/5-punktov-kotorye-dolzhny-byt-v-kazhdoj-terms-of-use/
 - контакты 
-
-- плавное исчехновение логосов
+- плавное исчеpновение логосов
 
 
 done
++ feat: добавил favicon везде и для всех экранов + && fix: аватарки большие в мал && cont: eng artists && css artist upd-s
 + fix: футер в полиси & убрал js && feat: добавил favicon везде и для всех экранов && feat: EXPO логотип теперь на главную
 + feat: добавил policy page && ref: footer обновил ссылки && feat: кредитсы для фото = img.alt added
 + fix: логотипы в css и файлы [ims-p && madiatakt-p] && minor css upd-s [artist title & name] && sfari pics bug
