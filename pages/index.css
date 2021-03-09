@@ -100,7 +100,7 @@ p, h1, h2, h3, h4, h5 {
 }
 .artist__title {
 	overflow: hidden;
-	max-width: calc((100% / 2) - 21px);
+	max-width: calc(70% - 21px);
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
@@ -121,7 +121,12 @@ p, h1, h2, h3, h4, h5 {
 	height: auto;
 	visibility: visible;
 	opacity: 1;
-	transition: visibility .35s, opacity .35s linear;
+	-webkit-transition: all .9s ease;
+	-moz-transition: all .9s ease;
+	-ms-transition: all .9s ease;
+	-o-transition: all .9s ease;
+	transition: all .9s ease;
+	/*transition: visibility .35s, opacity .35s linear;*/
 }
 .artist__dropdown-hidden {
 	height: 0;
@@ -187,7 +192,7 @@ p, h1, h2, h3, h4, h5 {
 .events {
 	box-sizing: border-box;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 .event {
@@ -195,12 +200,16 @@ p, h1, h2, h3, h4, h5 {
 	max-width: calc((650px / 2) - 21px);
 	margin-bottom: 50px;
 }
+.event:nth-child(even) {
+	margin-left: 21px;
+}
 .event:nth-last-child(-n+1) {
 	margin-bottom: 0;
 }
 .event__title {
 	color: #5649E6 !important;
-	text-decoration-line: underline !important;
+	text-decoration-line: none !important;
+	cursor: initial;
 }
 .event__theme {
     margin-top: 13px;
@@ -222,7 +231,7 @@ p, h1, h2, h3, h4, h5 {
 }
 .partner__role {
 	overflow: hidden;
-	max-width: calc((100% / 2) - 21px);
+	max-width: calc(70% - 21px);
 	text-overflow: ellipsis;
 	text-align: right;
 	white-space: nowrap;
@@ -239,7 +248,7 @@ p, h1, h2, h3, h4, h5 {
 	border-top: #dadada 1px solid;
 	padding: 50px 15px 50px 15px;
 	max-width: 1300px;
-	margin: 100px auto 0 auto;
+	margin: 150px auto 0 auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -375,6 +384,10 @@ p, h1, h2, h3, h4, h5 {
 		position: absolute;
 		background: #fff;
 		width: 100%;
+	}
+
+	.event:nth-child(even) {
+		margin-left: 0;
 	}
 
 	.footer__column {

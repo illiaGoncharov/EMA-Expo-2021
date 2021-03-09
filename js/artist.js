@@ -1,3 +1,7 @@
+$('a.event__title').click(function(e) {
+  e.preventDefault();
+});
+
 // artist click 
 const pD = function(e) {
 	e.preventDefault();
@@ -17,26 +21,62 @@ $('.partner a').click(function (e) {
 	e.preventDefault();
 });
 
-if ($(window).width() >= 650) {
-  // modal [lightbox] 
-  const popupLightbox = document.querySelector(".popup_type_lightbox");
-  const popupFigure = popupLightbox.querySelector(".popup__img-figure");
-  const popupImage = popupFigure.querySelector(".popup__img");
-  const popupCaption = popupFigure.querySelector(".popup__img-caption");
 
+// modal [lightbox] 
+const popupLightbox = document.querySelector(".popup_type_lightbox");
+const popupFigure = popupLightbox.querySelector(".popup__img-figure");
+const popupImage = popupFigure.querySelector(".popup__img");
+const popupCaption = popupFigure.querySelector(".popup__img-caption");
+let currnentGallery; 
+
+if ($(window).width() >= 650) {
   // behavior [popup]
   function closePopup(target) {
     target.classList.remove("popup_opened");
+    
   }
   function openPopup(link, alt) {
-    $('.popup').toggleClass("popup_opened");
+    $('.popup').addClass("popup_opened");
     popupImage.src = link;
     popupCaption.textContent = alt;
   }
 
   // listen [lightbox]
   $('.artist__gallery > img').click(function(e) {
+    currnentGallery = this.parentNode.children;
+    let galleryCurrent = Array.from(currnentGallery);
+    let galleryCurrentLength = Object.keys(galleryCurrent).length;
+    let indexCurrent = galleryCurrent.indexOf(this);
+    let indexNext, 
+        indexPrev;
+
+    const test = function(e) {
+      if (e.key == "ArrowRight") {
+        indexNext = indexCurrent += 1;
+        if (indexNext == galleryCurrentLength) {
+          indexCurrent = 0;
+          openPopup(galleryCurrent[0].src, galleryCurrent[0].alt);
+        } else {
+          openPopup(galleryCurrent[indexNext].src, galleryCurrent[indexNext].alt);
+        }
+      } else if (e.key == "ArrowLeft") {
+        indexPrev = indexCurrent -= 1;
+        if (indexPrev < 0) {
+          indexCurrent = galleryCurrentLength - 1;
+          openPopup(galleryCurrent[galleryCurrentLength - 1].src, galleryCurrent[galleryCurrentLength - 1].alt);
+        } else {
+          openPopup(galleryCurrent[indexPrev].src, galleryCurrent[indexPrev].alt);
+        }
+      }
+    }
+
+    if (galleryCurrentLength > 1) {
+      document.addEventListener("keydown", test);
       openPopup(this.src, this.alt);
+    } else {
+      document.removeEventListener("keydown", test);
+      openPopup(this.src, this.alt);
+    }
   })
 
   // listen close [lightbox]
@@ -44,16 +84,13 @@ if ($(window).width() >= 650) {
 
   popupList.forEach((popup) => {
     popup.addEventListener("click", (evt) => {
-      /*if (evt.target.classList.contains("popup_opened")) {
-        closePopup(popup);
-      }  */
       closePopup(popup);
     });
   });
 
   // listen close 2 [lightbox]
   document.addEventListener("keydown", (evt) => {
-    if (evt.key == "Escape") {
+    if (evt.key == "Escape" && document.querySelector(".popup_opened")) {
       closePopup(document.querySelector(".popup_opened"));
     }  
   });

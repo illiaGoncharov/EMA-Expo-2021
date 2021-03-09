@@ -8,34 +8,19 @@ plan
 
 --- next
 
-  + git add . && git commit -m "" && git push
+  + git add . && git commit -m "feat: esc && click на фотку = закрыть попап && " && git push
 
 notes
-- [done] кредитсы [] 
-	- class  
-	- js 
-	- альты 
-- [done] англ 
-- [done] fav circle [+ smaler] 
-	- files
+- esc консоль баг
 - [done] en/ru active  
 	- css
 	- class
-- [done] авки маленькие 
-	- css
-	- class
-- [done] https
-- [done] название проекта при наведении
-	- css
-- ! ecs выход & клик на фотку 
-	- 
-- ! expo везде в ссыку на индекс
-- ! сафари баг попап  
-- попроавить 
 
+- [done] сафари баг попап  
+---
 - ! сафари инпут баг 
 - ! сафари партнеры проявление вертикаль уровнять
-
+---
 - ! листалка
 - ссылки в конце артиста 
 - крутилка как в метро артист назв и тайтл
@@ -43,7 +28,7 @@ notes
 - «Нажимая на кнопку, вы даете согласие на обработку своих персональных данных». В тексте должна быть ссылка на документ — Пользовательское соглашение, договор или согласие на обработку персональных данных.
 - https://tilda.education/articles-personal-data-law
 - policy стр https://www.termsandcondiitionssample.com/
-- terms https://legalitgroup.com/ru/5-punktov-kotorye-dolzhny-byt-v-kazhdoj-terms-of-use/
+- terms https://legalitgroup.com/ru/5-punktov-kotorye-dolzhny-byt-v-kazhdoj-terms-of-use/ https://vc.ru/legal/113086-yuridicheskie-trebovaniya-k-saytam#personal-data https://tilda.education/articles-personal-data-law
 - контакты 
 - плавное исчеpновение логосов
 
