@@ -34,7 +34,6 @@ if ($(window).width() >= 650) {
   // behavior [popup]
   function closePopup(target) {
     target.classList.remove("popup_opened");
-    console.log("remove event listener");
     document.removeEventListener("keydown", test);
   }
   function openPopup(link, alt) {
@@ -45,7 +44,6 @@ if ($(window).width() >= 650) {
 
   // listen [lightbox]
   $(".artist__gallery > img").click(function (e) {
-    console.log("click");
     currentGallery = this.parentNode.children;
     let galleryCurrent = Array.from(currentGallery);
     let galleryCurrentLength = Object.keys(galleryCurrent).length;
