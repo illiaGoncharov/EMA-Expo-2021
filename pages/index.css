@@ -219,6 +219,14 @@ p, h1, h2, h3, h4, h5 {
     margin-top: 13px;
     margin-bottom: 13px;
 }
+.event__participants_type_black-link {
+    color: #000 !important; 
+    text-decoration: underline !important;
+}
+.event__participants_type_blue-link {
+    color: #5649E6 !important; 
+    text-decoration: none !important;
+}
 
 /* partner */
 .partners {}

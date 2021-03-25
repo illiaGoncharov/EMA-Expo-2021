@@ -8,32 +8,22 @@ plan
 
 --- next
 
-  + git add . && git commit -m "feat: esc && click на фотку = закрыть попап && " && git push
+  + git add . && git commit -m "upd: contetn" && git push
 
 notes
-- esc консоль баг
-- [done] en/ru active  
-	- css
-	- class
-
-- [done] сафари баг попап  
----
 - ! сафари инпут баг 
 - ! сафари партнеры проявление вертикаль уровнять
----
 - ! листалка
-- ссылки в конце артиста 
 - крутилка как в метро артист назв и тайтл
 - чимп 
-- «Нажимая на кнопку, вы даете согласие на обработку своих персональных данных». В тексте должна быть ссылка на документ — Пользовательское соглашение, договор или согласие на обработку персональных данных.
-- https://tilda.education/articles-personal-data-law
-- policy стр https://www.termsandcondiitionssample.com/
-- terms https://legalitgroup.com/ru/5-punktov-kotorye-dolzhny-byt-v-kazhdoj-terms-of-use/ https://vc.ru/legal/113086-yuridicheskie-trebovaniya-k-saytam#personal-data https://tilda.education/articles-personal-data-law
-- контакты 
+- «Нажимая на кнопку, вы даете согласие на обработку своих персональных данных». В тексте должна быть ссылка на документ 
 - плавное исчеpновение логосов
 
 
 done
++ fix: slider
++ feat: листалка [пока с багом]
++ feat: esc && click на фотку = закрыть попап && 
 + feat: добавил favicon везде и для всех экранов + && fix: аватарки большие в мал && cont: eng artists && css artist upd-s
 + fix: футер в полиси & убрал js && feat: добавил favicon везде и для всех экранов && feat: EXPO логотип теперь на главную
 + feat: добавил policy page && ref: footer обновил ссылки && feat: кредитсы для фото = img.alt added
