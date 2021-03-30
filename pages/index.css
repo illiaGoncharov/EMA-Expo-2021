@@ -100,7 +100,7 @@ p, h1, h2, h3, h4, h5 {
 }
 .artist__title {
     overflow: hidden;
-    max-width: calc(70% - 21px);
+    max-width: calc(50% - 21px);
     text-overflow: ellipsis;
     white-space: nowrap;
 }

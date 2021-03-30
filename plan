@@ -8,7 +8,7 @@ plan
 
 --- next
 
-  + git add . && git commit -m "upd: contetn" && git push
+  + git add . && git commit -m "fix: iphone 7 " && git push
 
 notes
 - ! сафари инпут баг 
@@ -21,6 +21,9 @@ notes
 
 
 done
++ 
++ upd: partners upd-s +4
++ upd: contetn
 + fix: slider
 + feat: листалка [пока с багом]
 + feat: esc && click на фотку = закрыть попап && 
