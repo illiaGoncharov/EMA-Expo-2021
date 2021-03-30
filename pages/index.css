@@ -423,10 +423,10 @@ p, h1, h2, h3, h4, h5 {
     background-image: url('../assets/yamaha-p.svg');
 }
 #ims-p:hover:after {
-    background-image: url('../assets/ims-p.svg'); /*???*/
+    background-image: url('../assets/ims-p.svg');
 }
 #madiatact-p:hover:after {
-    background-image: url('../assets/madiatact-p.svg'); /*???*/
+    background-image: url('../assets/madiatact-p.svg'); 
 }
 #goethe-p:hover:after {
     background-image: url('../assets/goethe-p.svg');
@@ -436,6 +436,18 @@ p, h1, h2, h3, h4, h5 {
 }
 #logic-p:hover:after {
     background-image: url('../assets/logic-p.svg');
+}
+#snob-p:hover:after {
+    background-image: url('../assets/snob-p.svg'); 
+}
+#kultura-p:hover:after {
+    background-image: url('../assets/kultura-p.svg');
+}
+#village-p:hover:after {
+    background-image: url('../assets/village-p.svg');
+}
+#artnp-p:hover:after {
+    background-image: url('../assets/artnp-p.svg');
 }
 
 .partner__name:hover:after {
