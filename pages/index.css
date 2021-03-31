@@ -317,6 +317,12 @@ p, h1, h2, h3, h4, h5 {
     margin-bottom: 7px;
     padding: 0;
 }
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) {
+    .form__input {
+        margin-top: -5px !important;
+        line-height: 18px !important;
+    }
+}}
 .form__input::placeholder {
     font-family: 'IBMPlexMono-r';
     font-style: normal;
