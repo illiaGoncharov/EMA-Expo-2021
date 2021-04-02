@@ -227,6 +227,10 @@ p, h1, h2, h3, h4, h5 {
     color: #5649E6 !important; 
     text-decoration: none !important;
 }
+.event__participants_type_grey-link {
+    color: #C4C4C4 !important;
+    text-decoration: underline !important;
+}
 
 /* partner */
 .partners {}
@@ -304,10 +308,6 @@ p, h1, h2, h3, h4, h5 {
     text-decoration-line: none !important;
 } 
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
 .form__name {
     color: #5649E6; 
     margin-bottom: 7px;
@@ -317,12 +317,19 @@ p, h1, h2, h3, h4, h5 {
     margin-bottom: 7px;
     padding: 0;
 }
-@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) {
-    .form__input {
-        margin-top: -5px !important;
-        line-height: 18px !important;
+.form__input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .form__input {
+            margin-top: -5px !important;
+            line-height: 18px !important;
+        }
     }
-}}
+}
 .form__input::placeholder {
     font-family: 'IBMPlexMono-r';
     font-style: normal;
