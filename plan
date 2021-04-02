@@ -8,20 +8,17 @@ plan
 
 --- next
 
-  + git add . && git commit -m "fix: iphone 7 " && git push
+  + git add . && git commit -m "" && git push
 
 notes
-- ! сафари инпут баг 
-- ! сафари партнеры проявление вертикаль уровнять
-- ! листалка
-- крутилка как в метро артист назв и тайтл
-- чимп 
-- «Нажимая на кнопку, вы даете согласие на обработку своих персональных данных». В тексте должна быть ссылка на документ 
+- партнеры проявление вертикаль уровнять
+- крутилка как в метро артист назв и тайтл 
 - плавное исчеpновение логосов
 
-
 done
-+ 
++ feat: subscribe активирован (+маркап и стили)
++ fix: footer layout upd [safary placeholder bug + contaact && link to author]
++ fix: iphone 7 srtists bug
 + upd: partners upd-s +4
 + upd: contetn
 + fix: slider
